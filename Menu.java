@@ -20,9 +20,8 @@ public class Menu {
             System.out.println("2. Interactive Shuffling Queue Operations");
             System.out.println("3. Interactive Circular Queue Operations");
             System.out.println("4. Infix Equation Solver");
-            System.out.println("5. Run Full Automated Test Harness");
             System.out.println("0. Exit");
-            System.out.print("Select an option (0-5): ");
+            System.out.print("Select an option (0-4): ");
 
             if (sc.hasNextInt()) {
                 choice = sc.nextInt();
@@ -51,13 +50,10 @@ public class Menu {
             case 4:
                 equationSolverMenu();
                 break;
-            case 5:
-                TestHarness.main(new String[0]);
-                break;
             case 0:
                 break;
             default:
-                System.out.println("Invalid option! Please enter a valid number (0-5).");
+                System.out.println("Invalid option! Please enter a valid number (0-4).");
         }
     }
 
